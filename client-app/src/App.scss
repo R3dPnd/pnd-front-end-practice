@@ -1,0 +1,40 @@
+#root {
+  // Scss variables which we gonna assign using
+  // useState and JavaScript in reactJS
+  $background-color: #fff;
+  $text-color: #262833;
+  $primary-color: red;
+  $secondary-color: blue;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-rows: auto;
+}
+
+.App {
+  width: 100%;
+  height: fit-content;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.pnd-body {
+  width: 100%;
+  display: flex;
+}
+
+.pnd-left-nav-container {
+  width: 10%;
+  padding: 2rem;
+  height: 100%;
+}
+
+.pnd-main-content {
+  width: 80%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}

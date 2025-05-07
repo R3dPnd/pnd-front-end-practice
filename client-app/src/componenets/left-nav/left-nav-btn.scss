@@ -1,0 +1,26 @@
+.pnd-left-nav-btn:link,
+.pnd-left-nav-btn:visited {
+
+    &:link, &:visited{
+        text-transform: uppercase;
+        text-align: center;
+        width: 100%;
+        height: fit-content;
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        text-decoration: none;
+        border-radius: 2rem;
+        transition: all .1s;
+        position: relative;
+    }
+
+    &:hover{
+        transform: translateY(-.1rem);
+        box-shadow: 0 .5rem .2rem rgba(0,0,0,.2);
+    }
+    
+    &:active{
+        transform: translateY(.1rem);
+        box-shadow: 0 .2rem .1rem rgba(0,0,0,.2);
+    }
+}
