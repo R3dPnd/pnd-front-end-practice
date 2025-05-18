@@ -33,6 +33,22 @@ The CSS Box Model is a fundamental concept that describes how elements are rende
 }
 ```
 
+```css
+/* Box Model Visual */
+    ┌─────────────────────────────────────────┐
+    │                Margin                    │
+    │    ┌─────────────────────────────┐      │
+    │    │           Border            │      │
+    │    │    ┌─────────────────┐      │      │
+    │    │    │     Padding     │      │      │
+    │    │    │  ┌─────────┐    │      │      │
+    │    │    │  │ Content │    │      │      │
+    │    │    │  └─────────┘    │      │      │
+    │    │    └─────────────────┘      │      │
+    │    └─────────────────────────────┘      │
+    └─────────────────────────────────────────┘
+```
+
 ## 2. What are CSS Grid and Flexbox? When would you use each?
 
 **Flexbox:**
@@ -329,6 +345,7 @@ const Button = styled.button`
 ```
 
 **SMACSS Categories:**
+
 1. Base
 2. Layout
 3. Module
@@ -418,4 +435,4 @@ const LazyComponent = React.lazy(() => import('./LazyComponent'));
 - Know debugging techniques
 - Be familiar with design tools
 - Understand version control
-- Know testing methodologies 
+- Know testing methodologies
