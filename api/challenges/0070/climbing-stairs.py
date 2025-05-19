@@ -1,13 +1,17 @@
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
-        map = {}
+    def climbStairs(self, n: int) -> int:
+        count = 0
 
-        for num in nums:
-            if num in map:
-                map[num] += 1
-            else:
-                map[num] = 1
-        sorted_map = dict(sorted(map.items(), key=lambda item: item[1], reverse=True))
-        topK = list(sorted_map)[0:k]
-        print(f"{sorted_map}:{topK}")
-        return topK
+        paths = [n]
+
+        while paths:
+            curr = paths.pop()
+            if curr == 0:
+                count += 1
+                continue
+            if curr < 0:
+                continue
+            paths.append(curr -1)
+            paths.append(curr -2)
+
+        return count
